@@ -45,7 +45,7 @@ const Work: React.FC<WorkProps> = ({ setSelectedItem }) => {
           "Contributed to the development of a Contract Management System using React, SQLite, and Flask with Firebase Authentication"
         ],
         skills: ["RAG Architecture", "LLMs", "Azure", "React", "Firebase", "PostgreSQL", "Tesseract OCR", "Semantic Search"],
-        mentor: "Sweta Mistry, Karan Joshi, and Prerak Patel"
+        mentor: "Sweta Mistry and Prerak Patel"
       }
     },
     {
