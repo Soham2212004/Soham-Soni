@@ -189,9 +189,11 @@ const TypedText = React.memo(() => {
         <div className="absolute top-3/4 left-1/3 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-500" />
       </div>
 
-      {/* Main content container */}
-      <div className={`relative z-10 container mx-auto px-6 flex flex-col md:flex-row items-center justify-between transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        {/* Left side: Text content */}
+      {/* Main content container - Adjusted for mobile devices */}
+      <div className={`relative z-10 container mx-auto px-6 flex flex-col md:flex-row items-center justify-between transition-all duration-1000 
+                        ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
+                        pt-32 sm:pt-40 md:pt-0`}>
+        {/* Left side: Text content - Mobile-friendly adjustments */}
         <div className="w-full md:w-1/2 text-left mb-10 md:mb-0">
           <div className="space-y-4">
             <h2 className="text-4xl font-bold text-blue-200 mb-2 relative">
@@ -219,8 +221,6 @@ const TypedText = React.memo(() => {
                 <span className="ml-2 relative z-10 group-hover:rotate-45 transition-transform duration-300">+</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300"></div>
               </button>
-              
-
             </div>
             
             {/* Social media icons with enhanced styling */}
@@ -393,13 +393,28 @@ const TypedText = React.memo(() => {
         
         .profile-image-container {
           position: relative;
-          width: 350px;
-          height: 350px;
-          margin-left: auto;
+          width: 250px;
+          height: 240px;
+          margin: 0 auto;
           transition: transform 0.3s ease-out;
           transform-style: preserve-3d;
         }
         
+        @media (min-width: 640px) {
+          .profile-image-container {
+            width: 280px;
+            height: 280px;
+          }
+        }
+        
+        @media (min-width: 768px) {
+          .profile-image-container {
+            width: 350px;
+            height: 350px;
+            margin-left: auto;
+            margin-right: 0;
+          }
+        }
         
         .profile-image-wrapper {
           position: relative;
