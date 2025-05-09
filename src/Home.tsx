@@ -290,8 +290,8 @@ const TypedText = React.memo(() => {
             </div>
           </div>
           
-          {/* Desktop-only social icons position */}
-          <div className="hidden md:block md:absolute md:left-6 md:bottom-20">
+          {/* Desktop-only social icons position - Moved higher up */}
+          <div className="hidden md:block md:absolute md:left-6 md:bottom-1/3 md:transform md:translate-y-16">
             <div className="flex mt-10 space-x-6">
               <a 
                 href="https://www.linkedin.com/in/soham-soni-2342b4239/" 
