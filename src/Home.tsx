@@ -159,7 +159,7 @@ const TypedText = React.memo(() => {
   }, [displayText, isTyping, titles]);
   
   return (
-    <div className="h-16 sm:h-12 overflow-hidden flex items-center">
+    <div className="h-16 sm:h-12 overflow-hidden flex items-center justify-center md:justify-start">
       <div className="font-semibold text-indigo-300">
         {displayText}
         <span className={`inline-block w-1 h-5 bg-indigo-300 ml-1 ${isTyping ? 'animate-pulse' : ''}`}></span>
@@ -189,42 +189,65 @@ const TypedText = React.memo(() => {
         <div className="absolute top-3/4 left-1/3 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-500" />
       </div>
 
-      {/* Main content container - Adjusted for mobile devices */}
-      <div className={`relative z-10 container mx-auto px-6 flex flex-col md:flex-row items-center justify-between transition-all duration-1000 
-                        ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
-                        pt-32 sm:pt-40 md:pt-0`}>
-        {/* Left side: Text content - Mobile-friendly adjustments */}
-        <div className="w-full md:w-1/2 text-left mb-10 md:mb-0">
-          <div className="space-y-4">
-            <h2 className="text-4xl font-bold text-blue-200 mb-2 relative">
-              <span className="relative inline-block">
-                Hi There,
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 animate-expand"></span>
-              </span>
-            </h2>
-            
-            <h1 className="text-5xl sm:text-6xl font-bold mb-6 relative overflow-hidden">
-              I'm <span className="bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent">Soham Soni</span>
-              <div className="absolute -bottom-2 left-0 w-3/4 h-0.5 bg-gradient-to-r from-blue-500 to-transparent"></div>
-            </h1>
-            
-            <div className="text-xl mb-8">
-              <TypedText />
+      {/* Main content container - Adjusted for better mobile centering and spacing */}
+      <div className={`relative z-10 container mx-auto px-6 transition-all duration-1000 
+                      ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
+                      pt-16 md:pt-20 pb-16 flex flex-col justify-center min-h-screen`}>
+        
+        {/* Mobile layout: Stacked vertically with better vertical spacing */}
+        <div className="flex flex-col items-center md:flex-row md:items-start md:justify-between">
+          
+          {/* Text content - Centered for mobile and with more top padding */}
+          <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0 order-1 mt-16 sm:mt-20 md:mt-0">
+            <div className="space-y-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200 mb-2 relative">
+                <span className="relative inline-block">
+                  Hi There,
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 animate-expand"></span>
+                </span>
+              </h2>
+              
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 relative overflow-hidden">
+                I'm <span className="bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent">Soham Soni</span>
+                <div className="absolute -bottom-2 left-0 w-3/4 h-0.5 bg-gradient-to-r from-blue-500 to-transparent"></div>
+              </h1>
+              
+              <div className="text-lg md:text-xl mb-6">
+                <TypedText />
+              </div>
+              
+              <div className="flex justify-center md:justify-start mb-8">
+                <button 
+                  onClick={openResumePopup}
+                  className="bg-transparent border-2 border-indigo-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-indigo-500/20 hover:bg-indigo-600/10 transition-all duration-300 flex items-center transform hover:scale-105"
+                >
+                  <span className="relative z-10">Resume</span>
+                  <span className="ml-2 relative z-10 group-hover:rotate-45 transition-transform duration-300">+</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300"></div>
+                </button>
+              </div>
             </div>
-            
-            <div className="flex flex-wrap gap-4">
-              <button 
-                onClick={openResumePopup}
-                className="bg-transparent border-2 border-indigo-600 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-indigo-500/20 hover:bg-indigo-600/10 transition-all duration-300 flex items-center transform hover:scale-105"
-              >
-                <span className="relative z-10">Resume</span>
-                <span className="ml-2 relative z-10 group-hover:rotate-45 transition-transform duration-300">+</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300"></div>
-              </button>
+          </div>
+          
+          {/* Profile image - Shows in the middle on mobile */}
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end order-2 md:order-3 mb-8 md:mb-0">
+            <div className="profile-image-container" ref={profileRef}>
+              <div className="profile-image-wrapper">
+                <div className="profile-image-glow"></div>
+                <div className="profile-image">
+                  <img 
+                    src={profileImage}
+                    alt="Soham Soni" 
+                    className="rounded-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
-            
-            {/* Social media icons with enhanced styling */}
-            <div className="flex mt-10 space-x-6">
+          </div>
+          
+          {/* Social media icons - Shows at the bottom on mobile */}
+          <div className="w-full flex justify-center md:hidden order-3 mt-4">
+            <div className="flex space-x-6">
               <a 
                 href="https://www.linkedin.com/in/soham-soni-2342b4239/" 
                 target="_blank" 
@@ -266,25 +289,49 @@ const TypedText = React.memo(() => {
               </a>
             </div>
           </div>
-        </div>
-        
-        {/* Right side: Enhanced Profile image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          {/* Profile image as circular element with 3D effects */}
-          <div 
-            className="profile-image-container" 
-            ref={profileRef}
-          >
-            {/* Animated rings */}
-            <div className="profile-image-wrapper">
-              <div className="profile-image-glow"></div>
-              <div className="profile-image">
-                <img 
-                  src={profileImage}
-                  alt="Soham Soni" 
-                  className="rounded-full object-cover"
-                />
-              </div>
+          
+          {/* Desktop-only social icons position */}
+          <div className="hidden md:block md:absolute md:left-6 md:bottom-20">
+            <div className="flex mt-10 space-x-6">
+              <a 
+                href="https://www.linkedin.com/in/soham-soni-2342b4239/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-blue-900/50 backdrop-blur-sm border border-blue-800/30 rounded-full p-3 hover:bg-blue-700 hover:scale-110 transition-all duration-300 group"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-6 h-6 text-white group-hover:text-blue-200" />
+              </a>
+              
+              <a 
+                href="https://github.com/Soham2212004" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-purple-900/50 backdrop-blur-sm border border-purple-800/30 rounded-full p-3 hover:bg-purple-700 hover:scale-110 transition-all duration-300 group"
+                aria-label="GitHub"
+              >
+                <Github className="w-6 h-6 text-white group-hover:text-purple-200" />
+              </a>
+              
+              <a 
+                href="https://www.instagram.com/_soham_soni_?igsh=NGk5azVpeGVpcHM5" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-pink-900/50 backdrop-blur-sm border border-pink-800/30 rounded-full p-3 hover:bg-pink-700 hover:scale-110 transition-all duration-300 group"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-6 h-6 text-white group-hover:text-pink-200" />
+              </a>
+              
+              <a 
+                href="https://www.credly.com/users/soni-soham" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-green-900/50 backdrop-blur-sm border border-green-800/30 rounded-full p-3 hover:bg-green-700 hover:scale-110 transition-all duration-300 group"
+                aria-label="Credly"
+              >
+                <Award className="w-6 h-6 text-white group-hover:text-green-200" />
+              </a>
             </div>
           </div>
         </div>
@@ -393,8 +440,8 @@ const TypedText = React.memo(() => {
         
         .profile-image-container {
           position: relative;
-          width: 250px;
-          height: 240px;
+          width: 220px;
+          height: 220px;
           margin: 0 auto;
           transition: transform 0.3s ease-out;
           transform-style: preserve-3d;
