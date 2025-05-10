@@ -80,7 +80,7 @@ const Skills = ({ setSelectedItem }) => {
     {
       title: "Basics of ABAP Programming",
       issuer: "SAP",
-      date: "2023",
+      date: "2024",
       description: "Foundational knowledge in ABAP programming for SAP systems.",
       icon: <Award size={24} className="text-purple-400" />,
       link: "https://drive.google.com/file/d/1T-rOb0AF2OjE-SYR4ZYt7QWiItjo04gJ/view?usp=sharing"
@@ -96,7 +96,7 @@ const Skills = ({ setSelectedItem }) => {
     {
       title: "Advanced Machine Learning Training",
       issuer: "Edunet Foundation",
-      date: "2023",
+      date: "2023=2024",
       description: "Specialized training in advanced machine learning techniques.",
       icon: <Award size={24} className="text-green-400" />,
       link: "https://drive.google.com/file/d/1WBAepr8ZEfsgqEvWzPdujEGv9qLlCsKH/view?usp=drive_link"
@@ -104,7 +104,7 @@ const Skills = ({ setSelectedItem }) => {
     {
       title: "Data Analytics with Python",
       issuer: "NPTEL",
-      date: "2022",
+      date: "2024",
       description: "Comprehensive training in data analytics using Python.",
       icon: <Award size={24} className="text-yellow-400" />,
       link: "https://drive.google.com/file/d/1SGSTy7Kqz1a7fV1tX4tNd9hKYmSjk-Vy/view?usp=sharing"
@@ -112,7 +112,7 @@ const Skills = ({ setSelectedItem }) => {
     {
       title: "AI/ML Hackathon Participation",
       issuer: "myOnsite Healthcare",
-      date: "2022",
+      date: "2024",
       description: "Active participation in AI/ML-focused hackathon.",
       icon: <Award size={24} className="text-pink-400" />,
       link: "https://drive.google.com/file/d/1BPi6JuGA0yost7_m5XbE0Ecq2UPPn5aF/view?usp=sharing"
