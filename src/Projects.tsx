@@ -109,17 +109,15 @@ The **AI Multitasker App** is a Flutter application designed to integrate variou
 **Usage**
 Each app within the AI Multitasker App is designed for ease of use. Simply provide the necessary input, and the AI will handle the rest, whether it's generating content, translating text, or creating personalized plans in PDF format.
       `
-    },
-    {
-      id: '03',
-      title: 'Resume Analyzer & Job Matcher',
-      subtitle: 'RAG System',
-      description: 'AI-driven resume analysis and job matching using RAG technology, powered by Gemini API and Pinecone vector database with semantic search.',
-      image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800',
-      icon: <FileText size={24} />,
-      githubLink: 'https://github.com/Soham2212004/Resume-Analyzer-Job-Matcher.git',
-      color: 'from-green-500 to-teal-600',
-      fullDescription: `
+    id: '03',
+    title: 'Resume Analyzer & Job Matcher',
+    subtitle: 'RAG System',
+    description: 'AI-driven resume analysis and job matching using RAG technology, powered by Gemini API and Pinecone vector database with semantic search.',
+    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800',
+    icon: <FileText size={24} />, // Make sure FileText is imported
+    githubLink: 'https://github.com/Soham2212004/Resume-Analyzer-Job-Matcher.git',
+    color: 'from-green-500 to-teal-600',
+    fullDescription: `
 **📋 Resume Analyzer & Job Matcher**
 A powerful AI-driven application that analyzes resumes and matches them with relevant job opportunities using **RAG (Retrieval-Augmented Generation)** technology, powered by **Gemini API** and **Pinecone vector database**.
 
@@ -183,18 +181,18 @@ Connect to live job boards like LinkedIn, Indeed, etc.
 2. **Cache Results**: Store embeddings to avoid regeneration
 3. **Async Processing**: Use async calls for better performance
 4. **Index Optimization**: Use appropriate Pinecone pod types for your scale
-      `
-    },
-    {
-      id: '04',
-      title: 'Personal Assistant',
-      subtitle: 'RAG Chatbot',
-      description: 'Sophisticated AI personal assistant with cosmic dark theme, using RAG technology for personalized information retrieval and context-aware responses.',
-      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
-      icon: <Users size={24} />,
-      githubLink: 'https://github.com/Soham2212004/Personal-Assistant.git',
-      color: 'from-purple-500 to-indigo-600',
-      fullDescription: `
+    `
+  },
+  {
+    id: '04',
+    title: 'Personal Assistant',
+    subtitle: 'RAG Chatbot',
+    description: 'Sophisticated AI personal assistant with cosmic dark theme, using RAG technology for personalized information retrieval and context-aware responses.',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
+    icon: <Users size={24} />,
+    githubLink: 'https://github.com/Soham2212004/Personal-Assistant.git',
+    color: 'from-purple-500 to-indigo-600',
+    fullDescription: `
 **🤖 Soham's Personal Assistant**
 A sophisticated AI-powered personal assistant built with cutting-edge technologies, featuring a stunning dark cosmic theme and advanced conversational capabilities.
 
@@ -254,18 +252,18 @@ Soham's Personal Assistant is an intelligent chatbot that provides personalized 
 * Voice Integration: Add speech-to-text and text-to-speech capabilities
 * Advanced Analytics: Track conversation patterns and popular queries
 * Integration APIs: Connect with social media and professional platforms
-      `
-    },
-    {
-      id: '05',
-      title: 'AI Financial Advisor',
-      subtitle: 'FinTech App',
-      description: 'Comprehensive financial advisory application built with AI in 1 hour, featuring investment suggestions, budgeting tips, and intelligent chatbot assistance.',
-      image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800',
-      icon: <DollarSign size={24} />,
-      githubLink: 'https://github.com/Soham2212004/Financial-Advisor.git',
-      color: 'from-amber-500 to-orange-600',
-      fullDescription: `
+    `
+  },
+  {
+    id: '05',
+    title: 'AI Financial Advisor',
+    subtitle: 'FinTech App',
+    description: 'Comprehensive financial advisory application built with AI in 1 hour, featuring investment suggestions, budgeting tips, and intelligent chatbot assistance.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800',
+    icon: <DollarSign size={24} />,
+    githubLink: 'https://github.com/Soham2212004/Financial-Advisor.git',
+    color: 'from-amber-500 to-orange-600',
+    fullDescription: `
 **🤖💰 AI-Powered Financial Advisor Bot**
 Built entirely with AI in just 1 hour using advanced prompt engineering techniques!
 
@@ -354,8 +352,8 @@ The project showcases how effective prompt engineering can accelerate developmen
 * Mobile app development
 * Export functionality for reports
 * Email notifications for goals
-      `
-    },
+    `
+  },
     {
       id: '06',
       title: 'Accident Detection',
