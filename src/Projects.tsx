@@ -292,7 +292,7 @@ This repository follows cloud engineering best practices including:
 - Cost-conscious resource management
 - Comprehensive documentation
       `
-    }
+    },
     {
       id: '07',
       title: 'Resume Analyzer & Job Matcher',
