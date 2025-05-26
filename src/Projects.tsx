@@ -12,6 +12,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+
   const projects = [
     {
       id: '01',
@@ -109,15 +110,199 @@ The **AI Multitasker App** is a Flutter application designed to integrate variou
 **Usage**
 Each app within the AI Multitasker App is designed for ease of use. Simply provide the necessary input, and the AI will handle the rest, whether it's generating content, translating text, or creating personalized plans in PDF format.
       `
-    id: '03',
-    title: 'Resume Analyzer & Job Matcher',
-    subtitle: 'RAG System',
-    description: 'AI-driven resume analysis and job matching using RAG technology, powered by Gemini API and Pinecone vector database with semantic search.',
-    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800',
-    icon: <FileText size={24} />, // Make sure FileText is imported
-    githubLink: 'https://github.com/Soham2212004/Resume-Analyzer-Job-Matcher.git',
-    color: 'from-green-500 to-teal-600',
-    fullDescription: `
+    },
+    {
+      id: '03',
+      title: 'Accident Detection',
+      subtitle: 'ML System',
+      description: 'Real-time accident detection using CNN and computer vision with emergency alert system integration.',
+      image: 'https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&q=80&w=800',
+      icon: <Globe size={24} />,
+      githubLink: 'https://github.com/Soham2212004/Road-Accident-Detection-Alert-System.git',
+      color: 'from-red-500 to-amber-600',
+      fullDescription: `
+**Road Accident Detection & Alert System**
+
+**Overview**
+**The Road Accident Detection & Alert System is a project designed to detect accidents on roads, trigger alerts, capture accident details, and enable emergency response. It utilizes computer vision, audio alerts, and communication technologies to improve response times and assist in emergency situations.**
+
+**Features**
+**Accident Detection: Utilizes computer vision algorithms to detect accidents based on visual cues.**
+**Alert System: Triggers an alert sound upon detecting an accident to notify nearby individuals.**
+**Screenshot Capture: Captures a screenshot of the accident scene along with date and time for documentation.**
+**Emergency Response: Allows authorized personnel to initiate emergency medical services by calling an ambulance.**
+
+**Technologies Used**
+**Computer Vision: OpenCV for image processing and object detection.**
+**Audio Alert: Integration with sound libraries for alert notifications.**
+**Communication: Integration with twilio for emergency response.**
+**Documentation: GitHub for version control and project sharing.**
+
+**Getting Started**
+**To use the Road Accident Detection & Alert System, follow these steps:**
+**Clone the repository to your local machine.**
+**Install the necessary dependencies listed in the requirements file.**
+**Configure the system settings and authorized personnel details.**
+**Run the main application script to start monitoring for accidents.**
+**In case of an accident, follow the on-screen instructions for emergency response actions.**
+
+**Usage**
+**The system is designed for use in surveillance and monitoring scenarios where quick detection and response to accidents are crucial. It can be deployed in traffic management systems, surveillance cameras, and other relevant environments.**
+      `
+    },
+    {
+      id: '04',
+      title: 'Investment Calculator',
+      subtitle: 'Flutter App',
+      description: 'Comprehensive financial planning app with SIP, Lumpsum, FD, EMI calculators using Flutter.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
+      icon: <Lock size={24} />,
+      githubLink: 'https://github.com/Soham2212004/Investment-Calculator-App.git',
+      color: 'from-emerald-500 to-green-600',
+      fullDescription: `
+**Overview**
+The Investment Calculator app is a comprehensive financial tool designed to help users manage and plan their finances effectively. This app provides a wide range of calculators to cover various aspects of investments, savings, and everyday math needs.
+
+**Key Features**
+**SIP Calculator**
+Calculate the future value of your Systematic Investment Plan (SIP) based on regular contributions, interest rates, and investment tenure. Visualize the growth of your investments over time with detailed charts and summaries.
+
+**Lumpsum Calculator**
+Determine the potential returns on a one-time investment over a specified period. Analyze how different interest rates and time horizons affect your investment growth.
+
+**Savings Calculator**
+Plan your savings goals by calculating how much you need to save regularly to reach a specific amount. Compare different saving strategies and their outcomes.
+
+**FD Calculator**
+Calculate the maturity amount and interest earned on your Fixed Deposits (FD). Supports different compounding frequencies (monthly, quarterly, half-yearly, yearly).
+
+**EMI Calculator**
+Compute Equated Monthly Installments (EMI) for loans based on principal amount, interest rate, and tenure. Provides a detailed breakdown of interest and principal components of each EMI payment.
+
+**GST Calculator**
+Easily calculate the Goods and Services Tax (GST) for various goods and services. Supports different GST rates and provides both inclusive and exclusive tax calculations.
+
+**Currency Converter**
+Convert amounts between different currencies with real-time exchange rates. Supports a wide range of global currencies for accurate conversions.
+
+**Math Calculators**
+**Simple Calculator:**
+Perform basic arithmetic operations like addition, subtraction, multiplication, and division.
+**Age Calculator:**
+Calculate your exact age in years, months, and days based on your birthdate.
+**BMI Calculator:**
+Determine your Body Mass Index (BMI) using height and weight to assess your health status.
+**Percentage Calculator**
+Calculate what percentage one number is of another,Determine the percentage change between two numbers,Calculate the percentage value from a given number and percentage.
+**Conversion Calculator**
+Convert units of length (e.g., meters to feet, inches to centimeters),Convert units of weight (e.g., kilograms to pounds, grams to ounces),Convert units of volume (e.g., liters to gallons, milliliters to fluid ounces).
+**GPA Calculator**
+Input your grades and credits for different subjects to calculate your GPA for the semester,Calculate your Cumulative GPA over multiple semesters,Supports different grading systems to calculate grade points.
+**Simple and Compound Interest (SI/CI) Calculator**
+Calculate the interest earned or paid on a principal amount over a period at a fixed interest rate,Compute the interest on an initial principal, which also accumulates interest over time.
+
+**Additional Features**
+**User-Friendly Interface: The app is designed with a clean, intuitive interface for easy navigation and use.**
+**Detailed Reports: Generate and download detailed reports of your calculations and projections.**
+      `
+    },
+    {
+      id: '05',
+      title: 'ML Models',
+      subtitle: 'Data Science',
+      description: 'Collection of machine learning models for various applications including classification, regression, and clustering.',
+      image: 'https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&q=80&w=800',
+      icon: <Brain size={24} />,
+      githubLink: 'https://github.com/Soham2212004/Ml_models.git',
+      color: 'from-violet-500 to-indigo-600',
+      fullDescription: `
+**ML Models App**
+Welcome to the ML Models App! This Flutter application integrates state-of-the-art machine learning models for real-time emotion and object detection. Built with TensorFlow Lite, the app offers a seamless user experience with live camera feed analysis.
+
+**Features**
+**Emotion Detection**
+* **Real-time Analysis**: Detects emotions such as happiness, sadness, anger, and more using the live camera feed.
+* **Intuitive UI**: Easy-to-use interface displaying the detected emotion in real-time.
+* **High Accuracy**: Utilizes a pre-trained TensorFlow Lite model to ensure accurate emotion detection.
+
+**Object Detection**
+* **Live Camera Feed**: Identifies various objects through the live camera, providing instant feedback.
+* **Multiple Object Recognition**: Capable of detecting multiple objects simultaneously, including items like t-shirts, watches, persons, and more.
+* **Efficient Performance**: Optimized for performance to ensure smooth and responsive object detection.
+
+**Getting Started**
+**Prerequisites**
+* Flutter SDK
+* Dart SDK
+
+**Usage**
+**Emotion Detection**
+* Open the app and navigate to the "Models" section.
+* Select "Emotion Detection."
+* Point your device's camera towards a face to see real-time emotion detection.
+
+**Object Detection**
+* Open the app and navigate to the "Models" section.
+* Select "Object Detection."
+* Use your device's camera to scan the environment and see detected objects in real-time.
+      `
+    },
+    {
+      id: '06',
+      title: 'Cloud Automation',
+      subtitle: 'DevOps',
+      description: 'Azure cloud automation and deployment pipeline optimization for enterprise applications.',
+      image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800',
+      icon: <Cloud size={24} />,
+      githubLink: 'https://github.com/Soham2212004/azure.git',
+      color: 'from-pink-500 to-rose-600',
+      fullDescription: `
+**Cloud Automation**
+
+**Overview**
+This project focuses on Azure cloud automation and deployment pipeline optimization for enterprise applications. It includes a set of scripts, templates, and workflows designed to streamline cloud operations and improve deployment efficiency.
+
+**Key Features**
+- Automated resource provisioning using Infrastructure as Code (IaC)
+- CI/CD pipeline templates for various application types
+- Cost optimization scripts and monitoring tools
+- Security compliance automation and governance
+- Scalable architecture patterns for enterprise workloads
+
+**Technologies Used**
+- Azure Resource Manager (ARM) templates
+- Terraform for cross-platform infrastructure
+- Azure DevOps pipelines
+- PowerShell and Azure CLI scripting
+- Azure Functions for serverless automation
+
+**Getting Started**
+To use these automation tools:
+1. Clone the repository
+2. Set up your Azure subscription credentials
+3. Modify the configuration files for your environment
+4. Run the included setup scripts
+5. Integrate with your existing CI/CD processes
+
+**Best Practices**
+This repository follows cloud engineering best practices including:
+- Modular design for reusability
+- Comprehensive error handling and logging
+- Least-privilege security principles
+- Cost-conscious resource management
+- Comprehensive documentation
+      `
+    }
+    {
+      id: '07',
+      title: 'Resume Analyzer & Job Matcher',
+      subtitle: 'RAG System',
+      description: 'AI-driven resume analysis and job matching using RAG technology, powered by Gemini API and Pinecone vector database with semantic search.',
+      image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800',
+      icon: <FileText size={24} />,
+      githubLink: 'https://github.com/Soham2212004/Resume-Analyzer-Job-Matcher.git',
+      color: 'from-green-500 to-teal-600',
+      fullDescription: `
 **📋 Resume Analyzer & Job Matcher**
 A powerful AI-driven application that analyzes resumes and matches them with relevant job opportunities using **RAG (Retrieval-Augmented Generation)** technology, powered by **Gemini API** and **Pinecone vector database**.
 
@@ -181,18 +366,18 @@ Connect to live job boards like LinkedIn, Indeed, etc.
 2. **Cache Results**: Store embeddings to avoid regeneration
 3. **Async Processing**: Use async calls for better performance
 4. **Index Optimization**: Use appropriate Pinecone pod types for your scale
-    `
-  },
-  {
-    id: '04',
-    title: 'Personal Assistant',
-    subtitle: 'RAG Chatbot',
-    description: 'Sophisticated AI personal assistant with cosmic dark theme, using RAG technology for personalized information retrieval and context-aware responses.',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
-    icon: <Users size={24} />,
-    githubLink: 'https://github.com/Soham2212004/Personal-Assistant.git',
-    color: 'from-purple-500 to-indigo-600',
-    fullDescription: `
+      `
+    },
+    {
+      id: '08',
+      title: 'Personal Assistant',
+      subtitle: 'RAG Chatbot',
+      description: 'Sophisticated AI personal assistant with cosmic dark theme, using RAG technology for personalized information retrieval and context-aware responses.',
+      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
+      icon: <Users size={24} />,
+      githubLink: 'https://github.com/Soham2212004/Personal-Assistant.git',
+      color: 'from-purple-500 to-indigo-600',
+      fullDescription: `
 **🤖 Soham's Personal Assistant**
 A sophisticated AI-powered personal assistant built with cutting-edge technologies, featuring a stunning dark cosmic theme and advanced conversational capabilities.
 
@@ -252,18 +437,18 @@ Soham's Personal Assistant is an intelligent chatbot that provides personalized 
 * Voice Integration: Add speech-to-text and text-to-speech capabilities
 * Advanced Analytics: Track conversation patterns and popular queries
 * Integration APIs: Connect with social media and professional platforms
-    `
-  },
-  {
-    id: '05',
-    title: 'AI Financial Advisor',
-    subtitle: 'FinTech App',
-    description: 'Comprehensive financial advisory application built with AI in 1 hour, featuring investment suggestions, budgeting tips, and intelligent chatbot assistance.',
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800',
-    icon: <DollarSign size={24} />,
-    githubLink: 'https://github.com/Soham2212004/Financial-Advisor.git',
-    color: 'from-amber-500 to-orange-600',
-    fullDescription: `
+      `
+    },
+    {
+      id: '09',
+      title: 'AI Financial Advisor',
+      subtitle: 'FinTech App',
+      description: 'Comprehensive financial advisory application built with AI in 1 hour, featuring investment suggestions, budgeting tips, and intelligent chatbot assistance.',
+      image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800',
+      icon: <DollarSign size={24} />,
+      githubLink: 'https://github.com/Soham2212004/Financial-Advisor.git',
+      color: 'from-amber-500 to-orange-600',
+      fullDescription: `
 **🤖💰 AI-Powered Financial Advisor Bot**
 Built entirely with AI in just 1 hour using advanced prompt engineering techniques!
 
@@ -352,190 +537,8 @@ The project showcases how effective prompt engineering can accelerate developmen
 * Mobile app development
 * Export functionality for reports
 * Email notifications for goals
-    `
-  },
-    {
-      id: '06',
-      title: 'Accident Detection',
-      subtitle: 'ML System',
-      description: 'Real-time accident detection using CNN and computer vision with emergency alert system integration.',
-      image: 'https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&q=80&w=800',
-      icon: <Globe size={24} />,
-      githubLink: 'https://github.com/Soham2212004/Road-Accident-Detection-Alert-System.git',
-      color: 'from-red-500 to-amber-600',
-      fullDescription: `
-**Road Accident Detection & Alert System**
-
-**Overview**
-**The Road Accident Detection & Alert System is a project designed to detect accidents on roads, trigger alerts, capture accident details, and enable emergency response. It utilizes computer vision, audio alerts, and communication technologies to improve response times and assist in emergency situations.**
-
-**Features**
-**Accident Detection: Utilizes computer vision algorithms to detect accidents based on visual cues.**
-**Alert System: Triggers an alert sound upon detecting an accident to notify nearby individuals.**
-**Screenshot Capture: Captures a screenshot of the accident scene along with date and time for documentation.**
-**Emergency Response: Allows authorized personnel to initiate emergency medical services by calling an ambulance.**
-
-**Technologies Used**
-**Computer Vision: OpenCV for image processing and object detection.**
-**Audio Alert: Integration with sound libraries for alert notifications.**
-**Communication: Integration with twilio for emergency response.**
-**Documentation: GitHub for version control and project sharing.**
-
-**Getting Started**
-**To use the Road Accident Detection & Alert System, follow these steps:**
-**Clone the repository to your local machine.**
-**Install the necessary dependencies listed in the requirements file.**
-**Configure the system settings and authorized personnel details.**
-**Run the main application script to start monitoring for accidents.**
-**In case of an accident, follow the on-screen instructions for emergency response actions.**
-
-**Usage**
-**The system is designed for use in surveillance and monitoring scenarios where quick detection and response to accidents are crucial. It can be deployed in traffic management systems, surveillance cameras, and other relevant environments.**
       `
     },
-    {
-      id: '07',
-      title: 'Investment Calculator',
-      subtitle: 'Flutter App',
-      description: 'Comprehensive financial planning app with SIP, Lumpsum, FD, EMI calculators using Flutter.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
-      icon: <Lock size={24} />,
-      githubLink: 'https://github.com/Soham2212004/Investment-Calculator-App.git',
-      color: 'from-emerald-500 to-green-600',
-      fullDescription: `
-**Overview**
-The Investment Calculator app is a comprehensive financial tool designed to help users manage and plan their finances effectively. This app provides a wide range of calculators to cover various aspects of investments, savings, and everyday math needs.
-
-**Key Features**
-**SIP Calculator**
-Calculate the future value of your Systematic Investment Plan (SIP) based on regular contributions, interest rates, and investment tenure. Visualize the growth of your investments over time with detailed charts and summaries.
-
-**Lumpsum Calculator**
-Determine the potential returns on a one-time investment over a specified period. Analyze how different interest rates and time horizons affect your investment growth.
-
-**Savings Calculator**
-Plan your savings goals by calculating how much you need to save regularly to reach a specific amount. Compare different saving strategies and their outcomes.
-
-**FD Calculator**
-Calculate the maturity amount and interest earned on your Fixed Deposits (FD). Supports different compounding frequencies (monthly, quarterly, half-yearly, yearly).
-
-**EMI Calculator**
-Compute Equated Monthly Installments (EMI) for loans based on principal amount, interest rate, and tenure. Provides a detailed breakdown of interest and principal components of each EMI payment.
-
-**GST Calculator**
-Easily calculate the Goods and Services Tax (GST) for various goods and services. Supports different GST rates and provides both inclusive and exclusive tax calculations.
-
-**Currency Converter**
-Convert amounts between different currencies with real-time exchange rates. Supports a wide range of global currencies for accurate conversions.
-
-**Math Calculators**
-**Simple Calculator:**
-Perform basic arithmetic operations like addition, subtraction, multiplication, and division.
-**Age Calculator:**
-Calculate your exact age in years, months, and days based on your birthdate.
-**BMI Calculator:**
-Determine your Body Mass Index (BMI) using height and weight to assess your health status.
-**Percentage Calculator**
-Calculate what percentage one number is of another,Determine the percentage change between two numbers,Calculate the percentage value from a given number and percentage.
-**Conversion Calculator**
-Convert units of length (e.g., meters to feet, inches to centimeters),Convert units of weight (e.g., kilograms to pounds, grams to ounces),Convert units of volume (e.g., liters to gallons, milliliters to fluid ounces).
-**GPA Calculator**
-Input your grades and credits for different subjects to calculate your GPA for the semester,Calculate your Cumulative GPA over multiple semesters,Supports different grading systems to calculate grade points.
-**Simple and Compound Interest (SI/CI) Calculator**
-Calculate the interest earned or paid on a principal amount over a period at a fixed interest rate,Compute the interest on an initial principal, which also accumulates interest over time.
-
-**Additional Features**
-**User-Friendly Interface: The app is designed with a clean, intuitive interface for easy navigation and use.**
-**Detailed Reports: Generate and download detailed reports of your calculations and projections.**
-      `
-    },
-    {
-      id: '08',
-      title: 'ML Models',
-      subtitle: 'Data Science',
-      description: 'Collection of machine learning models for various applications including classification, regression, and clustering.',
-      image: 'https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&q=80&w=800',
-      icon: <Brain size={24} />,
-      githubLink: 'https://github.com/Soham2212004/Ml_models.git',
-      color: 'from-violet-500 to-indigo-600',
-      fullDescription: `
-**ML Models App**
-Welcome to the ML Models App! This Flutter application integrates state-of-the-art machine learning models for real-time emotion and object detection. Built with TensorFlow Lite, the app offers a seamless user experience with live camera feed analysis.
-
-**Features**
-**Emotion Detection**
-* **Real-time Analysis**: Detects emotions such as happiness, sadness, anger, and more using the live camera feed.
-* **Intuitive UI**: Easy-to-use interface displaying the detected emotion in real-time.
-* **High Accuracy**: Utilizes a pre-trained TensorFlow Lite model to ensure accurate emotion detection.
-
-**Object Detection**
-* **Live Camera Feed**: Identifies various objects through the live camera, providing instant feedback.
-* **Multiple Object Recognition**: Capable of detecting multiple objects simultaneously, including items like t-shirts, watches, persons, and more.
-* **Efficient Performance**: Optimized for performance to ensure smooth and responsive object detection.
-
-**Getting Started**
-**Prerequisites**
-* Flutter SDK
-* Dart SDK
-
-**Usage**
-**Emotion Detection**
-* Open the app and navigate to the "Models" section.
-* Select "Emotion Detection."
-* Point your device's camera towards a face to see real-time emotion detection.
-
-**Object Detection**
-* Open the app and navigate to the "Models" section.
-* Select "Object Detection."
-* Use your device's camera to scan the environment and see detected objects in real-time.
-      `
-    },
-    {
-      id: '09',
-      title: 'Cloud Automation',
-      subtitle: 'DevOps',
-      description: 'Azure cloud automation and deployment pipeline optimization for enterprise applications.',
-      image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800',
-      icon: <Cloud size={24} />,
-      githubLink: 'https://github.com/Soham2212004/azure.git',
-      color: 'from-pink-500 to-rose-600',
-      fullDescription: `
-**Cloud Automation**
-
-**Overview**
-This project focuses on Azure cloud automation and deployment pipeline optimization for enterprise applications. It includes a set of scripts, templates, and workflows designed to streamline cloud operations and improve deployment efficiency.
-
-**Key Features**
-- Automated resource provisioning using Infrastructure as Code (IaC)
-- CI/CD pipeline templates for various application types
-- Cost optimization scripts and monitoring tools
-- Security compliance automation and governance
-- Scalable architecture patterns for enterprise workloads
-
-**Technologies Used**
-- Azure Resource Manager (ARM) templates
-- Terraform for cross-platform infrastructure
-- Azure DevOps pipelines
-- PowerShell and Azure CLI scripting
-- Azure Functions for serverless automation
-
-**Getting Started**
-To use these automation tools:
-1. Clone the repository
-2. Set up your Azure subscription credentials
-3. Modify the configuration files for your environment
-4. Run the included setup scripts
-5. Integrate with your existing CI/CD processes
-
-**Best Practices**
-This repository follows cloud engineering best practices including:
-- Modular design for reusability
-- Comprehensive error handling and logging
-- Least-privilege security principles
-- Cost-conscious resource management
-- Comprehensive documentation
-      `
-    }
   ];
 
   useEffect(() => {
