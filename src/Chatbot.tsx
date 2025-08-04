@@ -14,7 +14,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ isChatOpen, setIsChatOpen }) => {
     if (!chatLoaded) {
       import('@n8n/chat').then(({ createChat }) => {
         createChat({
-          webhookUrl: 'https://sonisoham22.app.n8n.cloud/webhook/157822eb-15b1-43f8-914b-56461fbd10b3/chat',
+          webhookUrl: 'https://soham-soni-22.app.n8n.cloud/webhook/157822eb-15b1-43f8-914b-56461fbd10b3/chat',
           mode: 'window',
           showWelcomeScreen: true,
           i18n: {
